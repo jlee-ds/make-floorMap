@@ -1,4 +1,4 @@
-xyzFloorPoints = findFloorPlane(xyzPoints, 0);
+xyzFloorPoints = findFloorPlane(xyzPoints);
 figure(1);
 pcshow(xyzFloorPoints, 'VerticalAxis', 'y', 'VerticalAxisDir', 'down');
 %set tne name of graph label
