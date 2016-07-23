@@ -1,21 +1,30 @@
-% 기본적인 3D point  예제.
-% 실행시킨 순간의 raw depth data를 3D point로 바꿔서 보여줌.
+%basic example of 3D point
+%show 3D coordinate transformed from raw depth data when executed
 
-% kinect에서 depth 센서는 2번. 해당 디바이스에 대한 객체를 생성.
+%the number of Kinect depth sensor is 2
+%create object according to device
 depthDevice = imaq.VideoDevice('kinect', 2);
-% depth sensor의 값을 보여주는 창을 생성.
+
+%create tab to show values of depth sensors
 preview(depthDevice);
-% warming을 위해 step을 한 번 불러줘야 한다는 데, 이해는 못함.
+
+%call 'step' for warming(don't know why)
 frame = step(depthDevice);
-% 다시 step으로 순간의 raw depth data를 depthImage에 저장.
+
+%store raw depth data at a moment to depthImage with 'step'
 depthImage = step(depthDevice);
-% 해당 data를 3D point로 변환 후 640 * 480 * 3 크기 배열에 저장.
+
+%transform data to 3D coordinate then store it to an array which size is
+%640*480*3
 xyzPoints = depthToPointCloud(depthImage, depthDevice);
-% ???
+
+%don't know why
 pcshow(xyzPoints, 'VerticalAxis', 'y', 'VerticalAxisDir', 'down');
-% 표시되는 그래프의 라벨 이름을 설정.
+
+%set the name of graph label
 xlabel('X (m)');
 ylabel('Y (m)');
 zlabel('Z (m)');
-% 객체 삭제
+
+%delete object
 release(depthDevice); 
