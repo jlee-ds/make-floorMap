@@ -16,4 +16,4 @@ You can reference this code only for educational purpose.
     - variable for test: EX_3dPoint.mat
     - calculate floor plane with RANSAC. find obstacle region with height value.
     - make a map of floor. (obstacle = red)
-    ![TestImage](https://github.com/jlee-ds/makeFloorMap/blob/master/1.JPG?raw=true)
+   ![TestImage](https://github.com/jlee-ds/makeFloorMap/blob/master/1.JPG?raw=true)
