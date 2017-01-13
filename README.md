@@ -8,7 +8,7 @@ You can reference this code only for educational purpose.
 
     - related code: traceCameraPose.m, getRT.m
     - compare two 2D image and 3D points to get relative camera pose.
-   [![TestVedio](https://img.youtube.com/vi/5E57Hc2MAbY/0.jpg)](https://www.youtube.com/watch?v=5E57Hc2MAbY){:target="_blank"}
+   [![TestVedio](https://img.youtube.com/vi/5E57Hc2MAbY/0.jpg)](https://www.youtube.com/watch?v=5E57Hc2MAbY)
 
 > Make Map of Floor
 
